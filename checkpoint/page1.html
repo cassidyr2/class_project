@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/home/mrmccoy/Pictures/how_to_become_a_software_engineer.avif" type="image/x-icon">
+    <title>homepage</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+
+    <nav class="navbar">
+
+      <a href="page1.html">Homepage</a><br>
+      <a href="about.html">About</a><br>
+      <a href="work.html">Work</a><br>
+      <a href="resume.html">Resume</a><br>
+      <a href="contact.html">Contact</a><br>
+  </nav>
+
+</head>
+<style>
+    /* Toggle Dark Theme */
+    #theme-btn {
+      font-size: 1.5rem;
+      cursor: pointer;
+      color: #596AFF;
+    }
+    #theme-btn:hover {
+      color: #BB86FC;
+    }
+    .changeTheme {
+      background: #1D1E22;
+      color: #eee;
+    }
+    </style>
+<body>
+    <div id="theme-btn" class="far fa-moon"></div>
+    
+      <script>
+        //gets the button by ID from your HTML element
+        const themeBtn = document.getElementById("theme-btn");
+        //when you click that button
+        themeBtn.onclick = () => {
+        //the default class "fa-moon" switches to "fa-sun" on toggle
+          themeBtn.classList.toggle("fa-sun");
+        //after the switch on toggle, if your button contains "fa-sun" class
+          if (themeBtn.classList.contains("fa-sun")) {
+        //onclicking themeBtn, the changeTheme styling will be applied to the body of your HTML
+            document.body.classList.add("changeTheme");
+          } else {
+        // onclicking themeBtn, applied changeTheme styling will be removed
+            document.body.classList.remove("changeTheme");
+          }
+        }
+    </script>
+    <nav class="navbar">
+
+        <a href="page1.html">Homepage</a><br>
+        <a href="about.html">About</a><br>
+        <a href="work.html">Work</a><br>
+        <a href="resume.html">Resume</a><br>
+        <a href="contact.html">Contact</a><br>
+    </nav>
+    <br>
+    <section>
+        Welcome to the homepage of Mr McCoy, make yourself comfortable and enjoy the content while I prep you for this journey ahead  
+    </section>
+    
+   
+</body>
+</html>
